@@ -10,7 +10,7 @@ $UNKNOWN_STATUS = 3
 $DEPENDENT_STATUS = 4
 
 $NSC_TMPDIR = "C:\Program Files\NSClient++\tmp\"
-$STATUSFILE = $ICINGA_TMPDIR + ${SCRIPT_NAME}
+$STATUSFILE = $NSC_TMPDIR + ${SCRIPT_NAME}
 
 $dateDeadline = (Get-Date).AddDays($SERVICE_TH)
 $ActualDate = (Get-Date)
