@@ -8,7 +8,7 @@ For each cert found, gets Name and ExpirationDate and compares the ExpirationDat
 
 If that ExpirationDate is lower that the Threashold, it writes the Name and ExpirationDate to a StatusFile, so multiple certs can be compared in the same script.
 
-I do it this way so if more than one certs are going to expire before Threshold, you can list them, otherwise, the script would exit whenever it'd find the first cert that expires.
+The scripts behaves this way so if more than one cert is going to expire before Threshold, you can list them, otherwise, the script would exit whenever it'd find the first cert that expires.
 
 After that, the script checks if the StatusFile with certs that meet condition is not null, that means, and the scripts shows in console the lines + exit2.
 
