@@ -1,7 +1,7 @@
 # Powershell
 Powershell scritps
 
-# Check_console_certs.ps1
+# check_console_certs.ps1
 This script searches on path cert:\LocalMachine\My the certificates that are installed on a Windows server.
 
 For each cert found, gets Name and ExpirationDate and compares the ExpirationDate upon a Threshold.
