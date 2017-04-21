@@ -1,6 +1,6 @@
 Param(
 [string] $SCRIPT_NAME,
-[string] $SERVICE_Th
+[string] $SERVICE_TH
 )
 
 $OK_STATUS = 0
@@ -12,7 +12,7 @@ $DEPENDENT_STATUS = 4
 $NSC_TMPDIR = "C:\Program Files\NSClient++\tmp\"
 $STATUSFILE = $ICINGA_TMPDIR + ${SCRIPT_NAME}
 
-$dateDeadline = (Get-Date).AddDays($SERVICE_Th)
+$dateDeadline = (Get-Date).AddDays($SERVICE_TH)
 
 
 If (test-path -Path $STATUSFILE) {
